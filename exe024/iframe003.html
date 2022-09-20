@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 300px;
+        }
+
+        .imagem {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, porro. Voluptatum dolores quis illo ipsam a eveniet cupiditate quod esse mollitia, suscipit reprehenderit amet eius ullam vitae dignissimos maxime officia.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti odit vel impedit saepe ea quo assumenda fugit numquam corporis deleniti adipisci quod eius sint vitae illum facere, maiores sunt ratione?</p>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis voluptas, neque voluptatibus eligendi odio exercitationem vel repellat quod illo odit, nostrum accusantium eos. Molestias consectetur incidunt dicta odit porro!</p>" name="frame">
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed at ipsam, quam a laudantium accusantium reiciendis alias, officia, incidunt qui. Magnam id dignissimos alias natus totam! Recusandae, dignissimos suscipit.</p>
+</body>
+</html>

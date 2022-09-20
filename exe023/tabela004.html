@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Filmes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        table  {
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        thead th {
+            background-color: #708090;
+            color: #fff;
+        }
+
+        th , td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        tfoot  td {
+            text-align: center;
+            font-style: italic;
+            font-size: 0.7em;
+            background-color: lightslategray;
+            color: #fff;
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            color: #87ceeb;
+            text-decoration: underline;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th><!-- escopo de coluna = col-->
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th><!--  escopo em colunas em grupos = colgroup-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup"><strong>Mulheres</strong></th> <!-- escopo de linha em grupos = rowgroup-->
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatiz Sousa</td>
+                <td>Hulk</td>
+                <td>Incepion</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Laura Irrita</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup"><strong>Homens</strong></th>
+                <td>Ronaldo Pantaleão</td>
+                <td>Homem de Ferro</td>
+                <td>Transformes</td>
+                <td>Invocação do Mal</td>
+            </tr>
+            <tr>
+                <td>Daniel Lorenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Stoy</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5" >&copy;Desenvolvido por <a href="https://github.com/ronaldopantaleao">Ronaldo Pantaleão</a></td>
+        </tfoot>
+    </table>
+</body>
+
+</html>
