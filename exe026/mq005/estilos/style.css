@@ -33,7 +33,6 @@ span#burguer:hover {
     background-color: #fff;
     color: #000;
 }
-
 nav {
     display: none;
 }
@@ -67,5 +66,5 @@ main {
 article p {
     text-indent: 15px;
     margin-bottom: 20px;
-    transform: scale(1);
+    
 }
