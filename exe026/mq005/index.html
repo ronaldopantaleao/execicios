@@ -4,11 +4,11 @@
     <meta charset="UTf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilos/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/midia-query.css">
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>RP</h1>
         <span  id="burguer" class="material-icons" onclick="clicar()">menu</span>
@@ -36,7 +36,14 @@
             </p>
         </article>
     </main>
-    <script> 
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 678){
+                itens.style.display = 'block'
+            }
+        }
+
+
         function clicar(){
             if (itens.style.display =='block'){
                 itens.style.display = 'none'
